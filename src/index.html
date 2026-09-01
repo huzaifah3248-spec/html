@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="../src/output.css">
+</head>
+<body>
+<nav bg-purple-500 text-white>
+<ul>
+    <li><a href="#coffee">Coffee</a>
+    <ul>
+        <li>
+            <a href="#coffee-shops" type="disc">Coffee Shops</a>
+        </li>
+    </ul>
+    </li>
+    <li><a href="#tea" >Tea</a>
+        <ul>
+            <li>
+                <a href="#tea-shops" type="disc">Tea Shops</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#milk" >Milk</a>
+        <ul>
+            <li>
+                <a href="#milk-shops" type="disc">Milk shops</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+</nav>
+<div class="city">
+  <div>
+    <h2 id="coffee">Coffee</h2>
+    <p style="background-image:url('/public/coffee.jpg'); background-size: cover;
+     background-position: center; color: rgb(182, 124, 105); padding: 10px; border-radius: 5px;">
+    <b>Coffee is a brewed drink prepared from roasted seeds of the coffee plant.</b></p>
+  </div> 
+
+  <div>
+    <h2 id="tea">Tea</h2>
+    <p style="background-image:url('/public/tea.jpg'); background-size: cover;
+     background-position: center; color: rgb(234, 179, 161); padding: 10px; border-radius: 5px;">
+    <b>Tea is a beverage prepared by pouring hot water over tea leaves.</b></p>
+  </div>
+
+  <div>
+    <h2 id="milk">Milk</h2>
+    <p style="background-image:url('/public/milk.jpg'); background-size: cover;
+     background-position: center; color: rgb(235, 97, 51 ); padding: 10px; border-radius: 5px;">
+    <b>Milk is a white liquid produced by the mammary glands of female mammals.</b></p>
+  </div>
+</div>
+
+<div class="city shop-grid">
+  <div class="shop-card">
+    <h2 class="table-title" id="coffee-shops">Coffee Shops</h2>
+    <table>
+      <caption><h2>Most visited</h2></caption>
+      <tr>
+        <th style="width: 40%;">Name</th>
+        <th>Contact</th>
+        <th>Starting From</th>
+      </tr>
+      <tr>
+        <td><a href="https://timhortons.com.pk/lahore/"  target="_blank";style="color: rgb(67, 8, 8); ">Tim Hortons</a></td>
+        <td><a href="https://timhortons.com.pk/contact/" target="_blank"; style="color: rgb(67, 8, 8); ">Contact TH</a></td>
+        <td>1500</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.coffeebean.com/"  target="_blank";style="color: rgb(67, 8, 8); ">CBTL</a></td>
+        <td><a href="https://www.coffeebean.com/pages/contact" target="_blank"; style="color: rgb(67, 8, 8); ">Contact CBTL</a></td>
+        <td>1000</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="shop-card">
+    <h2 class="table-title" id="tea-shops">Tea Shops</h2>
+    <table>
+      <caption><h2>Most visited</h2></caption>
+      <tr>
+        <th style="width: 40%;">Name</th>
+        <th>Contact</th>
+        <th>Starting From</th>
+      </tr>
+      <tr>
+        <td><a href="https://quettaparatha.com/"  target="_blank"; style="color: rgb(67, 8, 8); ">Quetta chai</a></td>
+        <td>UAN: 111-330-000</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/search?q=lahore+chaye+qawali&sca_esv=89f92e0cb398e070&sxsrf=APpeQns0890haDe7E4xIiHiuUuEuZugyww%3A1788251156837&ei=FIyWatLmMqyakdUP0-6FuQ0&biw=1705&bih=780&oq=lahore+chaye&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGxhaG9yZSBjaGF5ZSoCCAAyBhAAGBYYHjIIEAAYFhgeGAoyBhAAGBYYHjICECYyAhAmMgIQJjICECYyAhAmMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgNI5TNQoQFYnw1wAXgBkAEAmAH-AaAB-hCqAQUwLjEuObgBA8gBAPgBAZgCB6ACzAvCAgoQABhHGNYEGLADwgINEAAYRxjWBBjJAxiwA8ICDhAAGIAEGIoFGJIDGLADwgINEAAYgAQYigUYQxiwA8ICGRAuGIAEGIoFGEMYxwEYrwEYmAUYmQUYsAPCAg4QABjkAhjWBBiwA9gBAcICFxAuGNgCGLgGGNoGGNwGGMgDGLAD2AEBwgIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQHCAgQQIxgnwgIKEAAYgAQYigUYQ8ICFhAuGIAEGIoFGEMYxwEYrwEYmAUYmQXCAgoQABiABBgUGIcCwgIFEAAYgATCAhcQLhiABBiKBRiRAhjHARivARiYBRiZBcICCxAuGIAEGMcBGK8BwgILEAAYgAQYigUYkQLCAg4QLhiABBiKBRiRAhixA8ICEBAuGIAEGBQYhwIYxwEYrwHCAggQABiABBixA8ICCBAuGLEDGIAEwgIFEC4YgATCAgsQLhiABBiKBRiRAsICERAuGIAEGIoFGJECGMcBGK8BmAMAiAYBkAYTugYGCAEQARgJkgcFMS4wLjagB89usgcDMi02uAeYC8IHBzMtNS4xLjHIB4gBgAgB&sclient=gws-wiz-serp" 
+         target="_blank"; style="color: rgb(67, 8, 8); ">chaye qawali</a></td>
+        <td>0333 4953959</td>
+        <td>500</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="shop-card">
+    <h2 class="table-title" id="milk-shops">Milk Shops</h2>
+    <table>
+      <caption><h2>Most visited</h2></caption>
+      <tr>
+        <th style="width: 40%;">Name</th>
+        <th>Contact</th>
+        <th>Starting From</th>
+      </tr>
+      <tr>
+        <td><a href="https://achhaemart.com/?srsltid=AfmBOooNtL_mcDoDGzHpmBAGE-f1atIERW1Zjda3tulZfLQXD6QXM-YV"
+            target="_blank"; style="color: rgb(67, 8, 8); ">Achha E Mart</a></td>
+        <td> 0311 1333337</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td><a href="https://dudhshud.com/" target="_blank"; style="color: rgb(67, 8, 8); ">Dudhshud</a></td>
+        <td><a href="https://dudhshud.com/contact-us/" target="_blank"; style="color: rgb(67, 8, 8); ">Contact US</a></td>
+        <td>200</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
