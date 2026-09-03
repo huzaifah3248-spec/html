@@ -22,7 +22,7 @@ nav {
 
 .nav-item {
   position: relative;
-  font-family: 'Times New Roman';
+  font-family: 'Times New Roman', serif;
 }
 
 .nav-item > a {
@@ -34,12 +34,17 @@ nav {
   transition: background-color 0.2s ease;
 }
 
-.nav-item:hover > a {
+.nav-item:hover > a,
+.nav-item:focus-within > a {
   background-color: rgba(107, 40, 40, 0.9);
   padding: 15px 22px 10px 22px;
 
 }
-
+.nav-item:hover .dropdown-menu,
+.nav-item:focus-within .dropdown-menu,
+.nav-item.is-open .dropdown-menu {
+  display: block;
+}
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -257,15 +262,24 @@ form button:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(67, 8, 8, 0.5);
 }
-
 @media (max-width: 800px) {
-  .intro-row, 
-  .shop-grid {
+  .intro-row {
     flex-direction: column;
+  }
+
+  .shop-grid {
     grid-template-columns: 1fr;
   }
-}
 
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+  }
+}
 footer {
   background-color: rgb(67, 8, 8);
   color: white;
